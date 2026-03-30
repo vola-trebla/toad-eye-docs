@@ -20,6 +20,9 @@ node_modules/
 .DS_Store
 Thumbs.db
 
+# Local planning docs
+prompts/
+
 # Debug
 npm-debug.log*
 yarn-debug.log*

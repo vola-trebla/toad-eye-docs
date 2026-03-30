@@ -83,11 +83,13 @@ Getting Started section uses explicit items. Other sections use `autogenerate: {
 
 ## Git workflow
 
-- `main` branch = production (auto-deploys to Cloudflare Pages)
-- Feature branches: `docs/<topic>` (e.g. `docs/budget-guards-guide`)
-- PRs trigger preview deploys on Cloudflare Pages (preview URL in PR comment)
-- Commit messages: conventional commits (`docs: add budget guards guide`)
-- Format before commit: `npx prettier --write .`
+- **`main`** = production (auto-deploys to Cloudflare Pages). Never force-push to main.
+- **Feature branches:** `docs/<topic>` (e.g. `docs/budget-guards-guide`) — one branch per task
+- **PRs:** every PR triggers a Cloudflare Pages preview deploy (preview URL in PR comment)
+- **Incremental work:** push early, communicate progress, don't batch everything into one giant commit
+- **Merge rule:** wait for "all done toad" before merging — PR review required
+- **Commit messages:** conventional commits (`docs: add budget guards guide`)
+- **Format before commit:** `npx prettier --write .`
 
 ## When writing documentation
 
