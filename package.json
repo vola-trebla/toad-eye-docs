@@ -1,0 +1,21 @@
+{
+  "name": "toad-eye-docs",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Documentation site for toad-eye — observability for MCP servers and LLM applications",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.34.0",
+    "astro": "^5.7.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0"
+  }
+}
