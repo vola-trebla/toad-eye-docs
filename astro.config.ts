@@ -10,10 +10,10 @@ export default defineConfig({
       description:
         "OpenTelemetry-based observability for MCP servers and LLM applications",
       logo: {
-        src: "./src/assets/logo.svg",
-        replacesTitle: true,
+        src: "./src/assets/frog.png",
+        alt: "toad-eye",
       },
-      favicon: "/favicon.svg",
+      favicon: "/frog.png",
       customCss: ["./src/styles/custom.css"],
       social: [
         {
