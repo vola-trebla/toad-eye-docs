@@ -9,6 +9,12 @@ export default defineConfig({
       title: "toad-eye",
       description:
         "OpenTelemetry-based observability for MCP servers and LLM applications",
+      logo: {
+        src: "./src/assets/frog.png",
+        alt: "toad-eye",
+      },
+      favicon: "/frog.png",
+      customCss: ["./src/styles/custom.css"],
       social: [
         {
           icon: "github",
