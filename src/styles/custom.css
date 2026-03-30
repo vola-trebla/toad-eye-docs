@@ -1,0 +1,12 @@
+/* toad-eye green/teal palette */
+:root {
+  --sl-color-accent-low: #052e16;
+  --sl-color-accent: #22c55e;
+  --sl-color-accent-high: #bbf7d0;
+}
+
+:root[data-theme="light"] {
+  --sl-color-accent-low: #dcfce7;
+  --sl-color-accent: #16a34a;
+  --sl-color-accent-high: #052e16;
+}
