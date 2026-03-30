@@ -1,13 +1,9 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightLlmsTxt from "starlight-llms-txt";
 
 export default defineConfig({
   site: "https://docs.toad-eye.dev",
-  vite: {
-    ssr: {
-      noExternal: ["zod"],
-    },
-  },
   integrations: [
     starlight({
       title: "toad-eye",
@@ -23,6 +19,16 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/vola-trebla/toad-eye-docs/edit/main/",
       },
+      routeMiddleware: "./src/routeData.ts",
+      plugins: [
+        starlightLlmsTxt({
+          projectName: "toad-eye",
+          description:
+            "OpenTelemetry-based observability for MCP servers and LLM applications",
+          promote: ["getting-started/*"],
+          demote: ["compatibility/*"],
+        }),
+      ],
       sidebar: [
         {
           label: "Getting Started",
